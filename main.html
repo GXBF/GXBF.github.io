@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>希望工作室</title>
+        <style>
+          body{
+            background-image: url(images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            background-attachment: fixed;
+          }
+          #intro{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            color:white;
+            font-size: 10px;
+            text-align: center;
+          }
+          #intro_win{
+            width: 480px;
+            height: 270px;
+            background: white;
+            border: 3px solid white;
+            border-radius: 20px;
+            position: absolute;
+            top:250px;
+            left: 450px;
+            text-align: center;
+            font-size: 18px;
+            display: none;
+          }
+          @keyframes out {
+            0%{
+              opacity: 0;
+            }
+            100%{
+              opacity: 1;
+            }
+          }
+          @keyframes in {
+            0%{
+              display: block;
+              opacity: 1;
+            }
+            100%{
+              opacity: 0;
+            }
+          }
+          a{
+            text-decoration: none;
+          }
+        </style>
+    </head>
+    <body>
+      <div id="intro">
+        <img style="width: 32px;height: 32px;position: relative;left: 13px;top: 5px;" src="images/self.png"/>
+        <br/><br/><span style="position: relative;left: 10px;">GXBFの介绍</span>
+      </div>
+      <div id="intro_win">
+        <h2 style="display: inline;">我们是：希望工作室</h2><img id="close_intro" style="position: relative;left: 10px;top: 5px;" src="images/close.png"/>
+        <p>
+          你好啊，陌生人，这里是希望工作室官方网站，这是GXBF的Github:
+          <a href="https://www.github.com/GXBF" target="_blank">GXBF</a>（网页加载速度可能较慢）。
+          这是GXBF的Bilibili:<a href="https://space.bilibili.com/1711131229" target="_blank">GXBF</a>
+          (这窗口能拖动，我没那么辣鸡，窗口拖动都不会)
+        </p>
+      </div>
+    </body>
+    <script>
+      var intro = document.getElementById("intro");
+      var intro_win = document.getElementById("intro_win");
+      intro.onclick = function(){
+        intro_win.style.display = "block";
+        intro_win.style.animation = "out 1s"
+      }
+      var close_intro = document.getElementById("close_intro");
+      close_intro.onclick = function(){
+        intro_win.style.display = "none";
+        intro_win.style.animation = "in 1s";
+      }
+      intro_win.onmousedown = function(event){
+                var disX = event.clientX - this.offsetLeft;
+                var disY = event.clientY - this.offsetTop;
+                intro_win.onmousemove = function(event){
+                    var l = event.clientX - disX;
+                    var t = event.clientY - disY;
+                    intro_win.style.left = l + "px";
+                    intro_win.style.top = t + "px";
+                }
+                intro_win.onmouseup = function(){
+                  intro_win.onmousemove = null;
+                }
+            }           
+    </script>
+    
+  
+</html>
