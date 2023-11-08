@@ -3,12 +3,33 @@
         <meta charset="utf-8"/>
         <title>希望工作室</title>
         <style>
-          body{
-            background-image: url(bg.jpg);
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            background-attachment: fixed;
-          }
+           body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* 导航栏样式 */
+    header {
+      background-color: #333;
+      padding: 10px;
+    }
+  
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav ul li {
+      display: inline;
+    }
+  
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
           #intro{
             width: 60px;
             height: 60px;
@@ -55,7 +76,18 @@
         </style>
     </head>
     <body>
-      <div id="intro">
+          <header>
+            <nav>
+              <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="service.html">服务</a></li>
+                <li><a href="main.html">成员名单</a></li>
+                <li><a href="tell.html">联系我们</a></li>
+              </ul>
+            </nav>
+          </header>
+        <div id="intro">
         <img style="width: 32px;height: 32px;position: relative;left: 13px;top: 5px;" src="self.png"/>
         <br/><br/><span style="position: relative;left: 10px;">GXBFの介绍</span>
       </div>
