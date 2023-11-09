@@ -21,17 +21,17 @@
       background-color: #333;
       padding: 10px;
     }
-    #intro{
-        width: 60px;
+    #gxbf{
+        width: 60px;/*左右*/
         height: 60px;
         position: absolute;
         left: 30px;
-        top: 30px;
+        top: 60px;/*上下*/
         color:rgb(58, 163, 145);
         font-size: 10px;
         text-align: center;
     }
-    #intro_win{
+    #gxbf_win{/*间隔75为佳*/
         width: 480px;
         height: 270px;
         background: rgba(204, 0, 255, 0.877);
@@ -43,7 +43,31 @@
         text-align: center;
         font-size: 18px;
         display: none;
-          }
+    }
+
+    #shengrui11{
+        width: 60px;/*左右*/
+        height: 60px;
+        position: absolute;
+        left: 30px;
+        top: 135px;/*上下*/
+        color:rgb(58, 163, 145);
+        font-size: 10px;
+        text-align: center;
+    }
+    #shengrui11_win{
+        width: 480px;
+        height: 270px;
+        background: rgba(204, 0, 255, 0.877);
+        border: 3px solid rgba(204, 0, 255, 0.877);
+        border-radius: 20px;
+        position: absolute;
+        top:250px;
+        left: 450px;
+        text-align: center;
+        font-size: 18px;
+        display: none;
+    }
           @keyframes out {
             0%{
               opacity: 0;
@@ -80,7 +104,7 @@
           a{
             text-decoration: none;
           }
-        </style>
+  </style>
     </head>
     <body>
         <header>
@@ -94,27 +118,65 @@
           </ul>
          </nav>
         </header>
-    <section id="intro">
+    <section id="gxbf">
         <img style="width: 32px;height: 32px;position: relative;left: 13px;top: 5px;" src="self.png"/>
         <br/><br/><span style="position: relative;left: 10px;">GXBFの介绍</span>
     </section>
-    <section id="intro_win">
-        <h2 style="display: inline;">GXBF</h2><img id="close_intro" style="position: relative;left: 10px;top: 5px;" src="close.png"/>
+    <section id="gxbf_win">
+        <h2 style="display: inline;">GXBF</h2><img id="close_gxbf" style="position: relative;left: 10px;top: 5px;" src="close.png"/>
         <p>
           你好啊，陌生人，这里是希望工作室介绍网站，这是GXBF的Github:
           <a href="https://www.github.com/GXBF" target="_blank">GXBF</a>（网页加载速度可能较慢）。
           这是GXBF的Bilibili:<a href="https://space.bilibili.com/1711131229" target="_blank">GXBF</a>
         </p> 
     </section>
+
+    <section id="shengrui11">
+      <img style="width: 32px;height: 32px;position: relative;left: 13px;top: 5px;" src="self.png"/>
+      <br/><br/><span style="position: relative;left: 10px;">SHENGRUI11の介绍</span>
+    </section>
+    <section id="shengrui11_win">
+      <h2 style="display: inline;">SHENGRUI11（网站设计者！）</h2><img id="close_shengrui11" style="position: relative;left: 10px;top: 5px;" src="close.png"/>
+      <p>
+        你好啊，陌生人，这里是希望工作室介绍网站，这是SHENGRUI11的Github:
+        <a href="https://www.github.com/GXBF" target="_blank">GXBF</a>（网页加载速度可能较慢）。
+        这是GXBF的Bilibili:<a href="https://space.bilibili.com/1711131229" target="_blank">GXBF</a>
+      </p> 
+    </section>
     </body>
     <script>
-      var intro = document.getElementById("intro");
-      var intro_win = document.getElementById("intro_win");
+      var intro = document.getElementById("gxbf");
+      var intro_win = document.getElementById("gxbf_win");
       intro.onclick = function(){
         intro_win.style.display = "block";
         intro_win.style.animation = "out 1s"
       }
-      var close_intro = document.getElementById("close_intro");
+      var close_intro = document.getElementById("close_gxbf");
+      close_intro.onclick = function(){
+        intro_win.style.display = "none";
+        intro_win.style.animation = "in 1s";
+      }
+      intro_win.onmousedown = function(event){
+                var disX = event.clientX - this.offsetLeft;
+                var disY = event.clientY - this.offsetTop;
+                intro_win.onmousemove = function(event){
+                    var l = event.clientX - disX;
+                    var t = event.clientY - disY;
+                    intro_win.style.left = l + "px";
+                    intro_win.style.top = t + "px";
+                }
+                intro_win.onmouseup = function(){
+                  intro_win.onmousemove = null;
+                }
+            }           
+
+            var intro = document.getElementById("shengrui11");
+      var intro_win = document.getElementById("shengrui11_win");
+      intro.onclick = function(){
+        intro_win.style.display = "block";
+        intro_win.style.animation = "out 1s"
+      }
+      var close_intro = document.getElementById("close_shengrui11");
       close_intro.onclick = function(){
         intro_win.style.display = "none";
         intro_win.style.animation = "in 1s";
