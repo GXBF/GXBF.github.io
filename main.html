@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>希望工作室</title>
+  <style>
+    /* 全局样式 */
+    body {
+        background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+  
+    /* 导航栏样式 */
+    header {
+      background-color: #333;
+      padding: 10px;
+    }
+    #gxbf{
+        width: 60px;/*左右*/
+        height: 60px;
+        position: absolute;
+        left: 30px;
+        top: 60px;/*上下*/
+        color:rgb(58, 163, 145);
+        font-size: 10px;
+        text-align: center;
+    }
+    #gxbf_win{/*间隔75为佳*/
+        width: 480px;
+        height: 270px;
+        background: rgba(204, 0, 255, 0.877);
+        border: 3px solid rgba(204, 0, 255, 0.877);
+        border-radius: 20px;
+        position: absolute;
+        top:250px;
+        left: 450px;
+        text-align: center;
+        font-size: 18px;
+        display: none;
+    }
+
+    #shengrui11{
+        width: 60px;/*左右*/
+        height: 60px;
+        position: absolute;
+        left: 30px;
+        top: 135px;/*上下*/
+        color:rgb(58, 163, 145);
+        font-size: 10px;
+        text-align: center;
+    }
+    #shengrui11_win{
+        width: 480px;
+        height: 270px; 
+        background: rgba(204, 0, 255, 0.877);
+        border: 3px solid rgba(204, 0, 255, 0.877);
+        border-radius: 20px;
+        position: absolute;
+        top:250px;
+        left: 450px;
+        text-align: center;
+        font-size: 18px;
+        display: none;
+    }
+          @keyframes out {
+            0%{
+              opacity: 0;
+            }
+            100%{
+              opacity: 1;
+            }
+          }
+          @keyframes in {
+            0%{
+              display: block;
+              opacity: 1;
+            }
+            100%{
+              opacity: 0;
+            }
+          }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav ul li {
+      display: inline;
+    }
+  
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+   
+          a{
+            text-decoration: none;
+          }
+  </style>
+    </head>
+    <body>
+        <header>
+         <nav>
+          <ul>
+             <li><a href="index.html">首页</a></li>
+             <li><a href="about.html">关于</a></li>
+             <li><a href="service.html">服务</a></li>
+             <li><a href="main.html">成员名单</a></li>
+             <li><a href="tell.html">联系我们</a></li>
+          </ul>
+         </nav>
+        </header>
+    <section id="gxbf">
+        <img style="width: 32px;height: 32px;position: relative;left: 13px;top: 5px;" src="self.png"/>
+        <br/><br/><span style="position: relative;left: 10px;">NanoTurtle</span>
+    </section>
+    <section id="gxbf_win">
+        <h2 style="display: inline;">NanoTurtle</h2><img id="close_gxbf" style="position: relative;left: 10px;top: 5px;" src="close.png"/>
+        <p>
+          你好啊，陌生人，这里是希望工作室介绍网站，这是NanoTurtle的Github:
+          <a href="https://www.github.com/GXBF" target="_blank">NanoTurtle</a>（网页加载速度可能较慢）。
+          这是GXBF的Bilibili:<a href="https://space.bilibili.com/1711131229" target="_blank">NanoTurtle</a>
+        </p> 
+    </section>
+
+    <section id="shengrui11">
+      <img style="width: 32px;height: 32px;position: relative;left: 13px;top: 5px;" src="self.png"/>
+      <br/><br/><span style="position: relative;left: 10px;">BusySheng</span>
+    </section>
+    <section id="shengrui11_win">
+      <h2 style="display: inline;">BusySheng（网站设计者！）</h2><img id="close_shengrui11" style="position: relative;left: 10px;top: 5px;" src="close.png"/>
+      <p>
+        你好啊，陌生人，这里是希望工作室介绍网站，这是BusySheng的Github:
+        <a href="https://www.github.com/GXBF" target="_blank">BusySheng</a>（网页加载速度可能较慢）。
+        这是BusySheng的Bilibili:<a href="https://space.bilibili.com/3537119846861310" target="_blank">BusySheng</a>
+      </p> 
+    </section>
+    </body>
+    <script>
+      var intro = document.getElementById("gxbf");
+      var gxbf_win = document.getElementById("gxbf_win");
+      intro.onclick = function(){
+        gxbf_win.style.display = "block";
+        gxbf_win.style.animation = "out 1s"
+      }
+      var close_intro = document.getElementById("close_gxbf");
+      close_intro.onclick = function(){
+        gxbf_win.style.display = "none";
+        gxbf_win.style.animation = "in 1s";
+      }
+      gxbf_win.onmousedown = function(event){
+                var disX = event.clientX - this.offsetLeft;
+                var disY = event.clientY - this.offsetTop;
+                gxbf_win.onmousemove = function(event){
+                    var l = event.clientX - disX;
+                    var t = event.clientY - disY;
+                    gxbf_win.style.left = l + "px";
+                    gxbf_win.style.top = t + "px";
+                }
+                gxbf_win.onmouseup = function(){
+                  gxbf_win.onmousemove = null;
+                }
+            }           
+
+            var intro = document.getElementById("shengrui11");
+      var shengrui11_win = document.getElementById("shengrui11_win");
+      intro.onclick = function(){
+        shengrui11_win.style.display = "block";
+        shengrui11_win.style.animation = "out 1s"
+      }
+      var close_intro = document.getElementById("close_shengrui11");
+      close_intro.onclick = function(){
+        shengrui11_win.style.display = "none";
+        shengrui11_win.style.animation = "in 1s";
+      }
+      shengrui11_win.onmousedown = function(event){
+                var disX = event.clientX - this.offsetLeft;
+                var disY = event.clientY - this.offsetTop;
+                shengrui11_win.onmousemove = function(event){
+                    var l = event.clientX - disX;
+                    var t = event.clientY - disY;
+                    shengrui11_win.style.left = l + "px";
+                    shengrui11_win.style.top = t + "px";
+                }
+                shengrui11_win.onmouseup = function(){
+                  shengrui11_win.onmousemove = null;
+                }
+            }           
+    </script>
+    
+  
+</html>
