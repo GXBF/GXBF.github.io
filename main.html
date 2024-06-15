@@ -146,52 +146,52 @@
     </body>
     <script>
       var intro = document.getElementById("gxbf");
-      var intro_win = document.getElementById("gxbf_win");
+      var gxbf_win = document.getElementById("gxbf_win");
       intro.onclick = function(){
-        intro_win.style.display = "block";
-        intro_win.style.animation = "out 1s"
+        gxbf_win.style.display = "block";
+        gxbf_win.style.animation = "out 1s"
       }
       var close_intro = document.getElementById("close_gxbf");
       close_intro.onclick = function(){
-        intro_win.style.display = "none";
-        intro_win.style.animation = "in 1s";
+        gxbf_win.style.display = "none";
+        gxbf_win.style.animation = "in 1s";
       }
-      intro_win.onmousedown = function(event){
+      gxbf_win.onmousedown = function(event){
                 var disX = event.clientX - this.offsetLeft;
                 var disY = event.clientY - this.offsetTop;
-                intro_win.onmousemove = function(event){
+                gxbf_win.onmousemove = function(event){
                     var l = event.clientX - disX;
                     var t = event.clientY - disY;
-                    intro_win.style.left = l + "px";
-                    intro_win.style.top = t + "px";
+                    gxbf_win.style.left = l + "px";
+                    gxbf_win.style.top = t + "px";
                 }
-                intro_win.onmouseup = function(){
-                  intro_win.onmousemove = null;
+                gxbf_win.onmouseup = function(){
+                  gxbf_win.onmousemove = null;
                 }
             }           
 
             var intro = document.getElementById("shengrui11");
-      var intro_win = document.getElementById("shengrui11_win");
+      var shengrui11_win = document.getElementById("shengrui11_win");
       intro.onclick = function(){
-        intro_win.style.display = "block";
-        intro_win.style.animation = "out 1s"
+        shengrui11_win.style.display = "block";
+        shengrui11_win.style.animation = "out 1s"
       }
       var close_intro = document.getElementById("close_shengrui11");
       close_intro.onclick = function(){
-        intro_win.style.display = "none";
-        intro_win.style.animation = "in 1s";
+        shengrui11_win.style.display = "none";
+        shengrui11_win.style.animation = "in 1s";
       }
-      intro_win.onmousedown = function(event){
+      shengrui11_win.onmousedown = function(event){
                 var disX = event.clientX - this.offsetLeft;
                 var disY = event.clientY - this.offsetTop;
-                intro_win.onmousemove = function(event){
+                shengrui11_win.onmousemove = function(event){
                     var l = event.clientX - disX;
                     var t = event.clientY - disY;
-                    intro_win.style.left = l + "px";
-                    intro_win.style.top = t + "px";
+                    shengrui11_win.style.left = l + "px";
+                    shengrui11_win.style.top = t + "px";
                 }
-                intro_win.onmouseup = function(){
-                  intro_win.onmousemove = null;
+                shengrui11_win.onmouseup = function(){
+                  shengrui11_win.onmousemove = null;
                 }
             }           
     </script>
