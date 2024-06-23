@@ -1,6 +1,6 @@
 // 模拟从服务器获取的文件列表数据
 const files = [
-    { name: '文件1', url: 'https://example.com/file1' },
+    { name: '【解决非法降级和非法安装】xtcmodule.zip', url: '/download_files/【解决非法降级和非法安装】xtcmodule.zip' },
     { name: '文件2', url: 'https://example.com/file2' },
     { name: '文件3', url: 'https://example.com/file3' },
 ];
