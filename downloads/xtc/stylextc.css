@@ -3,7 +3,6 @@ body {
     line-height: 1.6;
     background-color: #0099ffe3
 }
-
 header {
     background-color: #0044ffe3;
     color: #ffffff;
@@ -28,4 +27,12 @@ header {
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
+}
+
+.file-description {
+    margin: 2rem;
+}
+
+.file-description h2 {
+    margin-bottom: 1rem;
 }
