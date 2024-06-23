@@ -1,7 +1,7 @@
 
         // 模拟从服务器获取的文件列表数据
         const files = [
-            { name: '【解决非法降级和非法安装】xtcmodule.zip', url: '/download_files/【解决非法降级和非法安装】xtcmodule.zip', description: '暂无描述。' },
+            { name: '【解决非法降级和非法安装】xtcmodule.zip', url: '/download_files/【解决非法降级和非法安装】xtcmodule.zip', description: '本模块将开启debug，改版本号为9.9.9。' },
             { name: '【微信小程序】com.tencent.weapp.wear.APK', url: '/download_files/【微信小程序】com.tencent.weapp.wear.APK', description: '暂无描述。' },
             { name: '【我就有QFIL】QPST.rar', url: '/download_files/【我就有QFIL】QPST.rar', description: '暂无描述。' },
             { name: '【需解压】CaremeOS可用的EDXP框架.zip', url: '/download_files/【需解压】CaremeOS可用的EDXP框架.zip', description: '暂无描述。' },
