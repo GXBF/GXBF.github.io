@@ -23,8 +23,8 @@ header {
 }
 
 .download-list li {
-    background: #eee;
-    border: 1px solid #ccc;
+    background: #fffb00;
+    border: 1px solid #00ffc8;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
 }
