@@ -204,24 +204,24 @@
             ];
         
 
-        // // 获取文件列表的DOM元素
-        // const fileList = document.getElementById('file-list');
-        // const fileDescription = document.getElementById('file-description');
+      /*  // 获取文件列表的DOM元素
+        const fileList = document.getElementById('file-list');
+        const fileDescription = document.getElementById('file-description');
 
-        // // 遍历文件列表数据，创建并添加列表项
-        // files.forEach(file => {
-        //     const listItem = document.createElement('li');
-        //     listItem.textContent = file.name;
-        //     listItem.addEventListener('click', () => {
-        //         fileDescription.textContent = file.description;
-        //         const downloadButton = document.createElement('a');
-        //         downloadButton.href = file.url;
-        //         downloadButton.textContent = '下载';
-        //         downloadButton.style.marginLeft = '1rem';
-        //         fileDescription.appendChild(downloadButton);
-        //     });
-        //     fileList.appendChild(listItem);
-        // });
+        // 遍历文件列表数据，创建并添加列表项
+        files.forEach(file => {
+            const listItem = document.createElement('li');
+            listItem.textContent = file.name;
+            listItem.addEventListener('click', () => {
+                fileDescription.textContent = file.description;
+                const downloadButton = document.createElement('a');
+                downloadButton.href = file.url;
+                downloadButton.textContent = '下载';
+                downloadButton.style.marginLeft = '1rem';
+                fileDescription.appendChild(downloadButton);
+            });
+            fileList.appendChild(listItem);
+        });*/
 
 
 
