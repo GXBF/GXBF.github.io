@@ -6,8 +6,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0099ffe3;
-
+  background-color: #ffd900e3;
+/*background-color: #0099ffe3;
+background-color: #0044ffe3;*/
 
 }
   
@@ -16,7 +17,7 @@ body {
   
     /* 导航栏样式 */
     header {
-      background-color: #0044ffe3;
+      background-color: #ff0000e3;
       padding: 20px;
       text-align: center;
     }
