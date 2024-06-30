@@ -6,7 +6,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
 /*background-color: #0099ffe3;
 background-color: #0044ffe3;*/
 
@@ -17,7 +17,7 @@ background-color: #0044ffe3;*/
   
     /* 导航栏样式 */
     header {
-      background-color: #ff0000e3;
+      background-color: #0044ffe3;
       padding: 20px;
       text-align: center;
     }
@@ -62,7 +62,7 @@ background-color: #0044ffe3;*/
 
   
   footer {
-    background-color: #ffd900e3;
+    background-color: #0099ffe3;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -72,14 +72,14 @@ background-color: #0044ffe3;*/
 
   /*servce*/
 #ios {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #android {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -90,15 +90,14 @@ background-color: #0044ffe3;*/
 
 /*products*/
 #teams {
-  background-color: #ffd900e3;
-  color: #fff;
+  background-color: #0099ffe3;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 
 #NTTB {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -109,28 +108,28 @@ background-color: #0044ffe3;*/
 
 /*index*/
 #nnn {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #mmm {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #about {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #about {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -140,7 +139,7 @@ background-color: #0044ffe3;*/
 /*tell*/
 
 #tell {
-  background-color: #ffd900e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
