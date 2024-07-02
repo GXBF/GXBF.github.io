@@ -6,7 +6,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
 /*background-color: #0099ffe3;
 background-color: #0044ffe3;*/
 
@@ -62,7 +62,8 @@ background-color: #0044ffe3;*/
 
   
   footer {
-    background-color: #00ffb3e3;
+    background-color: #0099ffe3;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
   }
@@ -71,14 +72,14 @@ background-color: #0044ffe3;*/
 
   /*servce*/
 #ios {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #android {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -89,14 +90,14 @@ background-color: #0044ffe3;*/
 
 /*products*/
 #teams {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 
 #NTTB {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -107,28 +108,28 @@ background-color: #0044ffe3;*/
 
 /*index*/
 #nnn {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #mmm {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #about {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   border-radius:15px;
 }
 #about {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -138,7 +139,7 @@ background-color: #0044ffe3;*/
 /*tell*/
 
 #tell {
-  background-color: #00ffb3e3;
+  background-color: #0099ffe3;
   color: #fff;
   text-align: center;
   padding: 100px 0;
