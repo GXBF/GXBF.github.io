@@ -179,8 +179,8 @@ nav ul li a {
 #gxbf_win{/*间隔75为佳*/
   width: 480px;
   height: 270px;
-  background: rgba(204, 0, 255, 0.877);
-  border: 3px solid rgba(204, 0, 255, 0.877);
+  background: rgba(255, 196, 0, 0.877);
+  border: 3px solid rgba(255, 196, 0, 0.877);
   border-radius: 20px;
   position: absolute;
   top:250px;
@@ -203,8 +203,8 @@ nav ul li a {
 #shengrui11_win{
   width: 480px;
   height: 270px; 
-  background: rgba(204, 0, 255, 0.877);
-  border: 3px solid rgba(204, 0, 255, 0.877);
+  background: rgba(255, 196, 0, 0.877);
+  border: 3px solid rgba(255, 196, 0, 0.877);
   border-radius: 20px;
   position: absolute;
   top:250px;
@@ -226,8 +226,8 @@ nav ul li a {
 #qigege_win{
   width: 480px;
   height: 270px; 
-  background: rgba(204, 0, 255, 0.877);
-  border: 3px solid rgba(204, 0, 255, 0.877);
+  background: rgba(255, 196, 0, 0.877);
+  border: 3px solid rgba(255, 196, 0, 0.877);
   border-radius: 20px;
   position: absolute;
   top:250px;
